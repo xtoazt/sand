@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sand. - Unblocked Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="logo">sand.</h1>
+                <p class="tagline">Discover amazing games</p>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search for games..." class="search-input">
+                    <button id="searchBtn" class="search-button">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="search-suggestions">
+                    <span class="suggestion">Try: Minecraft</span>
+                    <span class="suggestion">Try: Among Us</span>
+                    <span class="suggestion">Try: Roblox</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Loading State -->
+        <div id="loading" class="loading hidden">
+            <div class="loading-spinner"></div>
+            <p>Searching for games...</p>
+        </div>
+
+        <!-- Games Grid -->
+        <section id="gamesSection" class="games-section">
+            <div class="games-grid" id="gamesGrid">
+                <!-- Games will be populated here -->
+            </div>
+        </section>
+
+        <!-- No Results State -->
+        <div id="noResults" class="no-results hidden">
+            <i class="fas fa-search"></i>
+            <h3>No games found</h3>
+            <p>Try searching for something else</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state hidden">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h3>Something went wrong</h3>
+            <p>Please try again later</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
