@@ -227,19 +227,13 @@ function escapeHtml(text) {
 
 // Add some initial content when page loads
 document.addEventListener('DOMContentLoaded', () => {
-    // Add some popular games as initial suggestions
-    const popularGames = [
-        { title: 'Minecraft', description: 'Build, explore, and survive in this blocky world', category: 'Adventure' },
-        { title: 'Among Us', description: 'Work together to find the impostor', category: 'Strategy' },
-        { title: 'Roblox', description: 'Create and play millions of games', category: 'Platform' },
-        { title: 'Fortnite', description: 'Battle royale with building mechanics', category: 'Action' }
-    ];
-    
-    // Show initial state with popular games
-    displayGames(popularGames);
-    
     // Focus search input
     searchInput.focus();
+    
+    // Add smooth entrance animation
+    setTimeout(() => {
+        document.body.style.opacity = '1';
+    }, 100);
 });
 
 // Add smooth scroll behavior for better UX

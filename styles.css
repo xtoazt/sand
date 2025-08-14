@@ -11,6 +11,8 @@ body {
     min-height: 100vh;
     color: #2c1810;
     line-height: 1.6;
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
 }
 
 .container {
@@ -233,18 +235,18 @@ body {
 }
 
 .game-title {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 600;
-    color: #333;
-    margin-bottom: 10px;
+    color: #2c1810;
+    margin-bottom: 12px;
     line-height: 1.3;
 }
 
 .game-description {
-    color: #666;
-    font-size: 0.95rem;
-    line-height: 1.5;
-    margin-bottom: 15px;
+    color: #5d4037;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -255,41 +257,42 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 0.9rem;
-    color: #999;
+    font-size: 0.95rem;
+    color: #8b4513;
 }
 
 .game-category {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
-    padding: 4px 12px;
-    border-radius: 12px;
-    font-size: 0.8rem;
-    font-weight: 500;
+    background: linear-gradient(135deg, #d4a574 0%, #8b4513 100%);
+    color: #f5f5dc;
+    padding: 6px 14px;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    box-shadow: 0 2px 8px rgba(139, 69, 19, 0.2);
 }
 
 /* No Results and Error States */
 .no-results, .error-state {
     text-align: center;
-    padding: 80px 0;
-    color: white;
+    padding: 100px 0;
+    color: #f5f5dc;
 }
 
 .no-results i, .error-state i {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    opacity: 0.7;
+    font-size: 5rem;
+    margin-bottom: 25px;
+    opacity: 0.8;
 }
 
 .no-results h3, .error-state h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
 .no-results p, .error-state p {
-    opacity: 0.8;
-    font-size: 1.1rem;
+    opacity: 0.9;
+    font-size: 1.2rem;
 }
 
 /* Utility Classes */
